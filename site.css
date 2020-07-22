@@ -1,7 +1,69 @@
-#main-container{
-    margin-top:5rem;
+h3, h4, h5, h6 {
+    color:navy
 }
 
-.fixed-top{
-    background-color:white;
+.header{
+    background-color:navy;
+    color:white;
+}
+
+
+/*main grid layout*/
+.grid-container {
+    display:grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 10% 80% 10% ;
+    grid-template-areas: 
+    "header header header"
+    "left main right";
+}
+
+.header {
+    grid-area: header;
+    padding-top:1rem;
+    padding-bottom:1rem;
+}
+
+.header > *{
+    margin-left:10%;
+}
+
+.left {
+    grid-area: left;
+}
+
+.main {
+    grid-area: main;
+}
+.right {
+    grid-area: right;
+}
+
+/*card grid layout*/
+
+.grid-card {
+    display:grid;
+    grid-template-rows: 2rem auto;
+    grid-template-columns: 4rem auto;
+    grid-template-areas: 
+    "icon-img card-heading"
+    "icon-img card-description";
+}
+
+.icon-img {
+    grid-area:icon-img;
+}
+
+.icon-img :first-child{
+    width:100%;
+    height:auto;
+    padding-right:1rem;
+}
+
+.card-heading {
+    grid-area:card-heading;
+}
+
+.card-description {
+    grid-area: card-description;
 }
