@@ -1,103 +1,26 @@
 <!DOCTYPE html>
-<html ng-app="mortgageApp">
+<html>
     <head>
+        <link rel="stylesheet" href="site.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
-        <script src="index.js" ></script>
+        
     </head>
-    <body ng-controller="mortgageController">
-       <div class="container">
-           <div class="row">
-               <div class="col-md-4">
-                <form>
-                    <div class="form-group">
-                      <label for="rate">Interest Rate</label>
-                      <input type="number" min="0" max="100" step="0.0001" class="form-control" id="rate" aria-describedby="rate" ng-model="rate" ng-change="recalc()">
-                    </div>
-                    <div class="form-group">
-                        <label for="price">Purchase Price</label>
-                        <input type="number" min="0" step="0.01" class="form-control" id="price" aria-describedby="price" ng-model="price" ng-change="recalc()">
-                    </div>
-                    <div class="form-group">
-                        <label for="loan">Loan</label>
-                        <input type="number" min="0" step="0.01" class="form-control" id="loan" aria-describedby="loan" ng-model="loan" ng-change="recalc()">
-                    </div>
-                    <div class="form-group">
-                        <label for="ltv">Loan to Value</label>
-                        <input type="number" class="form-control" step="0.01" disabled  id="ltv" aria-describedby="ltv" ng-model="ltv">
-                    </div>
-                    <div class="form-group">
-                        <label for="years">Years</label>
-                        <input type="number" min="1" step="1" class="form-control" id="years" aria-describedby="years" ng-model="years" ng-change="recalc()">
-                    </div>
-                    <div class="form-group">
-                        <label for="payPerYear">How many payments per year</label>
-                        <input type="number" min="1" step="1" class="form-control" id="payPerYear" aria-describedby="payPerYear" ng-model="payPerYear" ng-change="recalc()">
-                    </div>
-                    <div class="form-group">
-                        <label for="payment">Payment</label>
-                        <input type="number"  class="form-control" step="0.01" disabled id="payment" aria-describedby="payment" ng-model="payment">
-                    </div>
-                    <div class="form-group">
-                        <label for="op">Overpay on every payment</label>
-                        <input type="number" min="0" step="0.01" class="form-control" id="op" aria-describedby="op" ng-model="op" ng-change="recalc()">
-                    </div>
-                </form>
-               </div>
-                <div class="col-md-8">
-                    <table class="table table-bordered">
-                        <thead class="thead-dark">
-                            <tr>
-                                <td>
-                                    Year
-                                </td>
-                                <td>
-                                    Payment #
-                                </td>
-                                <td>
-                                    Total Payment
-                                </td>
-                                <td>
-                                    Interest
-                                </td>
-                                <td>
-                                    Principle
-                                </td>
-                                <td>
-                                    Balance
-                                </td>
-                                <td>
-                                    Equity
-                                </td>
-                            </tr>
-                            <tr ng-repeat="int in intervals" ng-class="[{'table-active':int.year%2==0}]">
-                                <td>
-                                    {{int.year}}
-                                </td>
-                                <td>
-                                    {{int.paymentNum}}
-                                </td>
-                                <td>
-                                    {{int.payment}}
-                                </td>
-                                <td>
-                                    {{int.interest}}
-                                </td>
-                                <td>
-                                    {{int.principle}}
-                                </td>
-                                <td>
-                                    {{int.balance}}
-                                </td>
-                                <td>
-                                    {{int.equity}}
-                                </td>
-                            </tr>
-                        </thead>
-                    </table>
-
+    <body>
+        <div class="container fixed-top">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>Rob Humphries</h2>
+                    <div class="muted-text">ServiceNow Developer</div>
                 </div>
             </div>
-       </div>
+        </div>
+        <div id="main-container" class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <a href="mortgage.html">Mortage Amortization Calculator</a>
+                    <a href="chess.html">Chess Game</a>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
