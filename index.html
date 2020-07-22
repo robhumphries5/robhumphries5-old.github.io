@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <script src="https://kit.fontawesome.com/d628406d56.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="site.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -9,55 +10,91 @@
 </head>
 
 <body>
-    <div class="container fixed-top">
-        <div class="row">
-            <div class="col-sm-12">
-                <h2>Rob Humphries</h2>
-                <div class="muted-text">ServiceNow Developer</div>
-            </div>
+    <div class="grid-container">
+        <div class="header">
+            <h2>Rob Humphries</h2>
+            <div class="muted-text">ServiceNow Developer</div>
+        </div>
+        <div class="left"></div>
+        <div class="main">
+            <h3>About me</h3>
+            <p>I'm a ServiceNow developer living and working in Bristol in the UK.</p>
+            <p>I enjoy software development as a hobby as well and like to take on small projects.</p>
+            <h3>ServiceNow Projects</h3>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="grid-card">
+                        <div class="icon-img">
+                            <img src="img\github-logo.png">
+                        </div>
+                        <div class="card-heading">
+                            <a href="https://github.com/robhumphries5/sp-slushbucket">SP
+                                Slushbucket Widget</a>
+                        </div>
+                        <div class="card-description">Github reposity for a personal project to create a slushbuck widget for the ServiceNow Service Portal.</div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="grid-card">
+                        <div class="icon-img">
+                            <img src="img\github-logo.png">
+                        </div>
+                        <div class="card-heading">
+                            <a href="https://github.com/robhumphries5/alert_ui_page">Alert UI Page</a>
+                        </div>
+                        <div class="card-description">Github repository for a personal project to create a generic Alert UI Page following ServiceNow Design System.
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="grid-card">
+                        <div class="icon-img">
+                            <img src="img\sn-community.jfif">
+                        </div>
+                        <div class="card-heading">
+                            <a href="https://community.servicenow.com/community?id=community_article&sys_id=c0619ef9db04b700200f0b55ca96199a">Hotjar Integration</a></div>
+                        <div class="card-description">ServiceNow Community post on integration of ServiceNow Service Portal with Hotjar.</div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="grid-card">
+                        <div class="icon-img">
+                            <img src="img\sn-community.jfif">
+                        </div>
+                        <div class="card-heading">
+                            <a href="https://community.servicenow.com/community?id=community_article&sys_id=97a6e8ffdb6c67440be6a345ca9619da">Jakarta SC Categories Widget Improvements</a></div>
+                        <div class="card-description">ServiceNow Community post on improvements to the V1 out of box SC Category widget</div>
+                    </div>
+                </li>
+            </ul>
+            <h3>Personal Projects</h3>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="grid-card">
+                        <div class="icon-img">
+                            <img src="https://img.icons8.com/color/48/000000/angularjs.png" /></div>
+                        <div class="card-heading">
+                            <a href="mortgage.html">Mortage Amortization Calculator</a>
+                        </div>
+                        <div class="card-description">AngularJS project to build an amortization calculator. It shows interest/capital repayment by payment period.</div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="grid-card">
+                        <div class="icon-img">
+                            <img src="https://img.icons8.com/color/48/000000/angularjs.png"/>
+                        </div>
+                        <div class="card-heading">
+                            <a href="Chess/chess.html">Chess Game</a>
+                        </div>
+                        <div class="card-description">A work in progress. AngularJS project to build a simple chess game.</div>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
-    <div id="main-container" class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <h3>About me</h3>
-                <p>I'm a ServiceNow developer living and working in Bristol in the UK.</p>
-                <p>I enjoy software development as a hobby as well and like to take on small projects.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12">
-                <h3>ServiceNow Projects</h3>
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <a href="https://github.com/robhumphries5/sp-slushbucket">SP Slushbucket Widget</a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="https://github.com/robhumphries5/alert_ui_page">Alert UI Page</a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="https://community.servicenow.com/community?id=community_article&sys_id=c0619ef9db04b700200f0b55ca96199a">Hotjar integration</a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="https://community.servicenow.com/community?id=community_article&sys_id=97a6e8ffdb6c67440be6a345ca9619da">Jakarta SC Categories Widget Improvements</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12">
-                <h3>Personal Projects</h3>
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <a href="mortgage.html">Mortage Amortization Calculator</a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="Chess/chess.html">Chess Game</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    <div class="right"></div>
+
 </body>
 
 </html>
